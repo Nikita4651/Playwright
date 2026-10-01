@@ -10,6 +10,7 @@ test('should successfully authenticate with valid credentials', async ({ page })
   await page.getByRole('textbox', { name: 'Пароль' }).fill(password);
   await page.getByTestId('login-submit-btn').click();
   await page.getByTestId('header-top').visible();
+  
 });
 
 
@@ -22,4 +23,5 @@ test('should fail authentication with incorrect password', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Пароль' }).fill('Qwerty424');
   await page.getByTestId('login-submit-btn').click();
   await page.getByTestId('login-error-hint').visible();;
+  
 });

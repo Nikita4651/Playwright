@@ -28,7 +28,7 @@ export default defineConfig({
   use: {
     launchOptions:{
       headless:false,
-      slowMo:600
+      slowMo:300
     },
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
@@ -44,7 +44,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
+    /*{
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
