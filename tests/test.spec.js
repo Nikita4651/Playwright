@@ -14,6 +14,7 @@ test('should successfully authenticate with valid credentials', async ({ page })
 });
 
 
+
 test('should fail authentication with incorrect password', async ({ page }) => {
   await page.goto("https://netology.ru");
   await page.getByRole('link', { name: 'Войти' }).click();
